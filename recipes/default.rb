@@ -16,7 +16,7 @@ include_recipe 'route53'
 
 route53_record "#{node.name}.vandelay.io" do
 
-  value "16.8.4.2"
+  value node[:ipaddress]
   type  "CNAME"
 
   zone_id               node[:route53][:zone_id]
