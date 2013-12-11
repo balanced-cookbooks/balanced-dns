@@ -9,19 +9,24 @@
 
 include_recipe 'balanced-hostname::setup_hostname'
 
-# lame, need to refresh apt first
-include_recipe 'apt'
 include_recipe 'route53'
 
+[
+ node.name,
+ "ip-#{node[:ipaddress].gsub('.', '-')}",
+ node['ec2']['instance_id'],
+].each do |name|
 
-route53_record "#{node.name}.vandelay.io" do
+  route53_record "#{name}.vandelay.io" do
 
-  value node[:ipaddress]
-  type  "CNAME"
+    value node[:ipaddress]
+    type  "CNAME"
 
-  zone_id               node[:route53][:zone_id]
-  aws_access_key_id     node[:citadel][:access_key_id]
-  aws_secret_access_key node[:citadel][:secret_access_key]
+    zone_id               node[:route53][:zone_id]
+    aws_access_key_id     node[:citadel][:access_key_id]
+    aws_secret_access_key node[:citadel][:secret_access_key]
 
-  action :create
+    action :create
+  end
+
 end
