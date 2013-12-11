@@ -1,4 +1,4 @@
-name             'balanced-hostname'
+name             'balanced-dns'
 maintainer       'Balanced'
 maintainer_email 'matthew@balancedpayments.com'
 license          'All rights reserved'

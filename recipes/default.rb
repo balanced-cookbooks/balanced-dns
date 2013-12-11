@@ -1,13 +1,11 @@
 #
-# Cookbook Name:: balanced-hostname
+# Cookbook Name:: balanced-dns
 # Recipe:: default
 #
 # Copyright 2013, Balanced
 #
 # All rights reserved - Do Not Redistribute
 #
-
-include_recipe 'balanced-hostname::setup_hostname'
 
 include_recipe 'route53'
 
@@ -20,7 +18,7 @@ include_recipe 'route53'
   route53_record "#{name}.vandelay.io" do
 
     value node[:ipaddress]
-    type  "CNAME"
+    type  'A'
 
     zone_id               node[:route53][:zone_id]
     aws_access_key_id     node[:citadel][:access_key_id]

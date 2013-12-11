@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: balanced-hostname
+# Cookbook Name:: balanced-dns
 # Recipe:: default
 #
 # Copyright 2013, Balanced
