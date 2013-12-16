@@ -21,8 +21,8 @@
 name 'balanced-dns'
 version '0.1.4'
 
-maintainer 'Balanced'
-maintainer_email 'matthew@coderanger.net'
+maintainer 'Mathew Francis-Landau'
+maintainer_email 'matthew@balancedpayments.com'
 license 'Apache 2.0'
 description 'Updates DNS entries for Balanced servers'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
