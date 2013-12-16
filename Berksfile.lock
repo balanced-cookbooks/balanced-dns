@@ -1,0 +1,16 @@
+{
+  "sources": {
+    "balanced-dns": {
+      "path": "."
+    },
+    "route53": {
+      "locked_version": "0.4.0"
+    },
+    "balanced-citadel": {
+      "locked_version": "1.0.0"
+    },
+    "citadel": {
+      "locked_version": "1.0.0"
+    }
+  }
+}
