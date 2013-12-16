@@ -18,5 +18,4 @@
 # limitations under the License.
 #
 
-
-default[:route53][:zone_id] = 'Z2IP8RX9IARH86'  # vandelay.io
+override[:route53][:zone_id] = 'Z2IP8RX9IARH86' # vandelay.io
