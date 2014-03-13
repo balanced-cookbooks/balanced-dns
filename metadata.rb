@@ -19,7 +19,7 @@
 #
 
 name 'balanced-dns'
-version '0.1.5'
+version '1.0.0'
 
 maintainer 'Mathew Francis-Landau'
 maintainer_email 'matthew@balancedpayments.com'
