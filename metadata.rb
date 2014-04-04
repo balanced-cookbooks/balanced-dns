@@ -27,5 +27,5 @@ license 'Apache 2.0'
 description 'Updates DNS entries for Balanced servers'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 
-depends 'route53', '~> 0.4.0'
+depends 'route53'
 depends 'balanced-citadel', '~> 1.0'
